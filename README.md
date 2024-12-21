@@ -52,8 +52,4 @@ If between 2/3 and 1 => scissors
 
 This is how we can convert the random number into a move and this will give the computer an equal chance of picking rock, paper or scissors.</p>
 
-<<<<<<< HEAD
 <code>website</code>: https://golla-udaykiran.github.io/rock-paper-scissors
-=======
-<code>website</code>: https://golla-udaykiran.github.io/rock-paper-scissors
->>>>>>> 954a0a0a0b3de1f31550bfe87c47c793c4edbf10
