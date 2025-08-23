@@ -22,7 +22,7 @@ Scissors beats Paper<p>
 
 2. Convert those steps into code</p>
 
-<p><ins>Steps or Algorithm</ins>
+<p><ins>Steps or Algorithm (Rock Paper Scissors)</ins>
 
 When we click a button:
 
@@ -30,7 +30,9 @@ When we click a button:
 
 2. Compare the moves to get the result
 
-3. Display the result in a popup</p>
+3. Update a score
+
+4. Display the result and score in a popup</p>
 
 <p>To randomly select a move for the computer we need to use a new piece of JavaScript code. So, here we're gonna use <code>Math.random()</code>
   
