@@ -1,4 +1,4 @@
-# rock-paper-scissors
+<h2>Rock Paper Scissors</h2>
 
 <p>Rules of Rock Paper Scissors
 
@@ -18,7 +18,7 @@ Scissors beats Paper<p>
 
 <p><ins>Strategy for JavaScript</ins>
 
-1. Think about what steps we need
+1. Think about what steps we need (algorithm)
 
 2. Convert those steps into code</p>
 
@@ -54,4 +54,9 @@ If between 2/3 and 1 => scissors
 
 This is how we can convert the random number into a move and this will give the computer an equal chance of picking rock, paper or scissors.</p>
 
+<h2>Resources</h2>
+<p>1. <a href="https://supersimple.dev/projects/booleans">Booleans Project</a></p>
+<p>2. <a href="https://supersimple.dev/projects/objects">Rock Paper Scissors</a></p>
+<p>3. <a href="https://supersimple.dev/projects/dom-rock-paper-scissors">Rock Paper Scissors</a></p>
+<p>4. <a href="https://supersimple.dev/projects/rock-paper-scissors">Rock Paper Scissors</a></p>
 <code>website</code>: https://golla-udaykiran.github.io/rock-paper-scissors
