@@ -59,4 +59,5 @@ This is how we can convert the random number into a move and this will give the 
 <p>2. <a href="https://supersimple.dev/projects/objects">Rock Paper Scissors</a></p>
 <p>3. <a href="https://supersimple.dev/projects/dom-rock-paper-scissors">Rock Paper Scissors</a></p>
 <p>4. <a href="https://supersimple.dev/projects/rock-paper-scissors">Rock Paper Scissors</a></p>
+<p>5. <a href="https://supersimple.dev/projects/advanced-functions">Rock Paper Scissors</a></p>
 <code>website</code>: https://golla-udaykiran.github.io/rock-paper-scissors
