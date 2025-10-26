@@ -34,6 +34,14 @@ When we click a button:
 
 4. Display the result and score in a popup</p>
 
+<p>Play the game with keyboard:
+
+type 'r' => play rock
+
+type 'p' => play paper
+
+type 's' => play scissors</p>
+
 <p>To randomly select a move for the computer we need to use a new piece of JavaScript code. So, here we're gonna use <code>Math.random()</code>
   
 <code>Math.random()</code> generates a random number between 0 and 1
