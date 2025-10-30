@@ -22,17 +22,28 @@
     <p class="js-moves"></p>
     <p class="js-score score"></p>
 
-    <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-      updateScoreElement();
-    " class="reset-score-button">Reset Score</button>
+    <!--
+      Remove onclick="" from the Reset Score button
+      and use .addEventListener instead.
+    -->
+    <button class="reset-score-button js-reset-score-button">
+      Reset Score
+    </button>
 
-    <button class="auto-play-button" onclick="
-      autoPlay();
-    ">Auto Play</button>
+    <!--
+      Remove onclick="" from the Auto Play button.
+      And add class="js-auto-play-button" so we can
+      select it in JavaScript and use .addEventListener()
+    -->
+    <button class="auto-play-button js-auto-play-button">
+      Auto Play
+    </button>
+
+    <!--
+      Add an element for displaying the
+      confirmation message.
+    -->
+    <p class="js-reset-confirmation"></p>
 
     <script src="script.js"></script>
   </body>

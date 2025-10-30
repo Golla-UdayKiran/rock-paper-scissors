@@ -22,7 +22,6 @@ let intervalId;
 //const autoPlay = () => {
 
 //};
-
 function autoPlay() {
   if (!isAutoPlaying) {
     intervalId = setInterval(() => {
@@ -30,12 +29,31 @@ function autoPlay() {
       playGame(playerMove);
     }, 1000);
     isAutoPlaying = true;
-  
+    
+    // When the game is auto playing, change
+    // the text in the button to 'Stop Playing'.
+    document.querySelector('.js-auto-play-button')
+      .innerHTML = 'Stop Play';
+
   } else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+
+    // When the game is not playing, change
+    // the text back to 'Auto Play'.
+    document.querySelector('.js-auto-play-button')
+      .innerHTML = 'Auto Play';
   }
 }
+
+/*
+  Get the auto play button using the DOM and
+  use .addEventListener()
+*/
+document.querySelector('.js-auto-play-button')
+  .addEventListener('click', () => {
+    autoPlay();
+  });
 
 document.querySelector('.js-rock-button')
   .addEventListener('click', () => {
@@ -59,6 +77,21 @@ document.body.addEventListener('keydown', (event) => {
     playGame('paper');
   } else if (event.key === 's') {
     playGame('scissors');
+  
+  // Add an if-statement condition to
+  // check if 'a' was pressed.
+  } else if (event.key === 'a') {
+    autoPlay();
+  
+  // Add an if-statement condition to
+  // check if 'Backspace' was pressed.
+  } else if (event.key === 'Backspace') {
+    // resetScore();
+
+    // Update 'Backspace' to show the
+    // confirmation message instead of
+    // resetting the score immediately.
+    showResetConfirmation();
   }
 });
 
@@ -134,4 +167,60 @@ function pickComputerMove() {
   }
 
   return computerMove;
+}
+
+// Create a new resetScore function so
+// we can reuse this code.
+function resetScore() {
+  score.wins = 0,
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem('score');
+  updateScoreElement();
+}
+
+// Add an event listener for the reset score
+// button using .addEventListener
+document.querySelector('.js-reset-score-button')
+  .addEventListener('click', () => {
+    // resetScore();
+
+    // Update the click event listener to
+    // show the confirmation message instead
+    // of resetting the score immediately.
+    showResetConfirmation();
+  });
+
+// Function for showing the confirmation message.
+function showResetConfirmation() {
+  document.querySelector('.js-reset-confirmation')
+    .innerHTML = `
+      Are you sure you want to reset the score?
+      <button class="js-reset-confirm-yes reset-confirm-button">
+        Yes
+      </button>
+      <button class="js-reset-confirm-no reset-confirm-button">
+        No
+      </button>
+    `;
+
+  // You could use onclick="..." in the HTML above,
+  // but it's recommended to use .addEventListener()
+  document.querySelector('.js-reset-confirm-yes')
+    .addEventListener('click', () => {
+      resetScore();
+      hideResetConfirmation();
+    });
+
+  document.querySelector('.js-reset-confirm-no')
+    .addEventListener('click', () => {
+      hideResetConfirmation();
+    });
+}
+
+// A helper function (it helps us reuse the
+// code for hiding the confirmation message).
+function hideResetConfirmation() {
+  document.querySelector('.js-reset-confirmation')
+    .innerHTML = '';
 }
