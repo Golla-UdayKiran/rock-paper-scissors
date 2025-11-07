@@ -63,9 +63,11 @@ If between 2/3 and 1 => scissors
 This is how we can convert the random number into a move and this will give the computer an equal chance of picking rock, paper or scissors.</p>
 
 <h2>Resources</h2>
+
 <p>1. <a href="https://supersimple.dev/projects/booleans">Booleans Project</a></p>
 <p>2. <a href="https://supersimple.dev/projects/objects">Rock Paper Scissors</a></p>
 <p>3. <a href="https://supersimple.dev/projects/dom-rock-paper-scissors">Rock Paper Scissors</a></p>
 <p>4. <a href="https://supersimple.dev/projects/rock-paper-scissors">Rock Paper Scissors</a></p>
 <p>5. <a href="https://supersimple.dev/projects/advanced-functions">Rock Paper Scissors</a></p>
-<code>website</code>: https://golla-udaykiran.github.io/rock-paper-scissors
+
+<code>website</code>: https://rock-paper-scissors-gameplay.vercel.app
